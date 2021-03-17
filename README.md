@@ -47,8 +47,12 @@ $ clasp push
 
 
 ### GITの使い方
-
-
+#### フォーク元からデータを取り込む
+```
+git remote add upstream https://github.com/fukan-data/gas-lecture.git # フォーク元のリポジトリを登録
+git fetch upstream # ローカルのupstreamリポジトリにフォーク元のソースを更新
+git marge upstream/master #ローカルのupstreamリポジトリのソースを手元の環境マージする
+```
 #### githubからpullする
 ```
 git pull origin master
@@ -60,7 +64,9 @@ git pull origin master
 
 #### ソースをgithubへpushする
 ```
-
+git add # staging環境に差分を更新
+git commit -m '更新内容記載' # indexにcommitを登録
+git push origin master # master branchにcommitをpushする
 ```
 
 
