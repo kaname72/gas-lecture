@@ -1,4 +1,4 @@
 
 function run () {
-  console.log('gutyagutay !!!!')
+    console.log('O')
 }
